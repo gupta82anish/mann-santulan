@@ -7,7 +7,7 @@ import Footer from "@/app/components/Footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export async function generateStaticParams() {
-  return [{ lang: "en" }, { lang: "es" }]
+  return [{ lang: "en" }, { lang: "hi" }]
 }
 
 export default async function RootLayout({
@@ -17,12 +17,13 @@ export default async function RootLayout({
   children: React.ReactNode
   params: { lang?: string }
 }) {
-  const dict = await getDictionary(params.lang || "en")
+  const { lang } = await params
+  const dict = await getDictionary(lang ?? "en")
 
   return (
-    <html lang={params.lang}>
+    <html lang={lang || "en"}>
       <body className={inter.className}>
-        <Header dict={dict.header} lang={params.lang || "en"} />
+        <Header dict={dict.header} lang={lang ??"en"} />
         <main>{children}</main>
         <Footer dict={dict.footer} />
       </body>

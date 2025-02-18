@@ -1,9 +1,9 @@
-import { en, es } from "./dictionary"
+import { en, hi } from "./dictionary"
 
 export const getDictionary = async (locale: string) => {
   switch (locale) {
-    case "es":
-      return es
+    case "hi":
+      return hi
     default:
       return en
   }

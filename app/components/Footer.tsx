@@ -25,7 +25,7 @@ export default function Footer({ dict }: { dict: any }) {
               <Link href="#" className="hover:text-blue-400">
                 Twitter
               </Link>
-              <Link href="#" className="hover:text-blue-400">
+              <Link href="https://www.linkedin.com/in/guptaridhima/" target="_blank" className="hover:text-blue-400">
                 LinkedIn
               </Link>
             </div>

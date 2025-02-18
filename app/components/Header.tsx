@@ -9,8 +9,17 @@ export default function Header({ dict, lang }: { dict: any; lang: string }) {
             {dict.title}
           </Link>
           <div className="space-x-4">
-            <Link href={`/${lang === "en" ? "es" : "en"}`} className="text-gray-600 hover:text-gray-800">
-              {lang === "en" ? "Español" : "English"}
+            <Link 
+              href={`/${lang}/about`}
+              className="text-gray-600 hover:text-gray-800"
+            >
+              {dict.aboutLink}
+            </Link>
+            <Link 
+              href={`/${lang === "en" ? "hi" : "en"}`} 
+              className="text-gray-600 hover:text-gray-800"
+            >
+              {lang === "en" ? "हिंदी" : "English"}
             </Link>
           </div>
         </div>
