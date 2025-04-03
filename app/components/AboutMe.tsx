@@ -1,9 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function AboutMe({ dict }: { dict: any }) {
+export default function AboutMe() {
   return (
-    <section className="py-16 bg-white">
+    <section id="about" className="py-16 bg-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Image Section */}
@@ -12,7 +12,7 @@ export default function AboutMe({ dict }: { dict: any }) {
               <div className="w-full h-full">
                 <Image
                   src="/assets/images/IMG_2583.jpeg"
-                  alt={dict.imageAlt}
+                  alt="Portrait of the therapist"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
@@ -23,17 +23,19 @@ export default function AboutMe({ dict }: { dict: any }) {
           
           {/* Content Section */}
           <div className="w-full md:w-2/3 space-y-6">
-            <h2 className="text-3xl font-bold text-gray-800">{dict.title}</h2>
+            <h2 className="text-3xl font-bold text-gray-800">About Me</h2>
             <ul className="space-y-4 list-disc pl-5 text-gray-600">
-              {dict.bullets.map((bullet: string, index: number) => (
-                <li key={index}>{bullet}</li>
-              ))}
+              <li>Licensed clinical therapist with 10+ years experience</li>
+              <li>Specialized in cognitive behavioral therapy</li>
+              <li>Masters in Clinical Psychology</li>
+              <li>Certified in trauma-focused therapy</li>
+              <li>Fluent in English and Spanish</li>
             </ul>
             <Link
-              href="/about" // Update with your actual about page path
-              className="inline-block mt-4 text-blue-600 hover:text-blue-800 font-semibold transition-colors"
+              href="/profile"
+              className="inline-block mt-4 text-muted-green hover:text-muted-green/80 font-semibold transition-colors"
             >
-              {dict.linkText} →
+              View full credentials →
             </Link>
           </div>
         </div>
