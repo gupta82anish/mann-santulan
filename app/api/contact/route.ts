@@ -1,7 +1,6 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 import { EmailTemplate } from '@/app/components/EmailTemplate';
-import React from 'react';
 
 // Don't use NEXT_PUBLIC_ prefix for server-side environment variables
 const resend = new Resend(process.env.RESEND_API_KEY);

@@ -21,10 +21,6 @@ export default function Profile() {
                 ridhimagupta920@gmail.com
               </a>
               <p className="flex items-center text-[#4A4A4A]">
-                <span className="mr-2">📞</span>
-                7889544214
-              </p>
-              <p className="flex items-center text-[#4A4A4A]">
                 <span className="mr-2">📍</span>
                 Jammu & Kashmir
               </p>
@@ -131,7 +127,7 @@ export default function Profile() {
                 <p className="font-medium mb-2 text-[#4A4A4A]">Education Counsellor</p>
                 <ul className="list-disc pl-5 space-y-2 text-[#4A4A4A]">
                   <li>Supported students in managing anxiety related to studying abroad.</li>
-                  <li>Developed and implemented strategies to enhance students' coping skills for managing academic pressure, social challenges, and life transitions.</li>
+                  <li>{"Developed and implemented strategies to enhance students' coping skills for managing academic pressure, social challenges, and life transitions."}</li>
                   <li>Worked effectively in fast-paced, high pressure environment.</li>
                 </ul>
               </div>
@@ -142,11 +138,11 @@ export default function Profile() {
           <div>
             <h2 className="text-2xl font-bold mb-6 text-[#2D2D2D]">TRAININGS & INTERNSHIPS</h2>
             <ul className="list-disc pl-5 space-y-2 text-[#4A4A4A]">
-              <li><span className="font-medium text-[#2D2D2D]">SensAble Child in collaboration with St Teresa's College</span> - Intensive training in learning disability in children ( Oct 22-Nov 22)</li>
+              <li><span className="font-medium text-[#2D2D2D]">{"SensAble Child in collaboration with St Teresa's College"}</span> - Intensive training in learning disability in children ( Oct 22-Nov 22)</li>
               <li><span className="font-medium text-[#2D2D2D]">PsychSchool</span> - Counselling Psychologist training program (Jun 21- Nov 21)</li>
               <li><span className="font-medium text-[#2D2D2D]">Fortis Escorts Hospital</span> - Internship in counselling psychology ( Dec 19- March 20)</li>
               <li><span className="font-medium text-[#2D2D2D]">Moolchand Hospital</span> - Internship in counselling psychology Sept 19- Oct 19)</li>
-              <li><span className="font-medium text-[#2D2D2D]">Manjil NGO</span> - Volunteer for social welfare ( Dec 19-March 21)</li>
+              <li><span className="font-medium text-[#2D2D2D]">Manjil NGO</span> - {"Volunteer for social welfare ( Dec 19-March 21)"}</li>
             </ul>
           </div>
         </div>

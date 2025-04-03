@@ -12,7 +12,7 @@ export default function IntroCall() {
             <p className="text-gray-600 text-lg">
               Take the first step towards better mental health with a free 15-minute introductory call. 
               This is an opportunity for us to discuss your needs, answer your questions, and determine 
-              if we're a good fit for working together.
+              if we&apos;re a good fit for working together.
             </p>
           </div>
           <div className="md:w-1/3 flex justify-end">

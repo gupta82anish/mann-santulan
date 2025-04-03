@@ -26,7 +26,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="container mx-auto px-6 relative z-10 text-white">
         <h1 className="text-5xl font-bold mb-4">Your Path to Mental Wellness</h1>
-        <p className="text-xl mb-8">Professional therapy to help you overcome life's challenges</p>
+        <p className="text-xl mb-8">{"Professional therapy to help you overcome life's challenges"}</p>
         <Link
           href="#intro-call"
           onClick={scrollToIntroCall}

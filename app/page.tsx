@@ -1,7 +1,6 @@
 import Hero from "./components/Hero"
 import AboutTherapy from "./components/AboutTherapy"
 import ContactForm from "./components/ContactForm"
-import AppointmentBooking from "./components/AppointmentBooking"
 import AboutMe from "./components/AboutMe"
 import IntroCall from "./components/IntroCall"
 

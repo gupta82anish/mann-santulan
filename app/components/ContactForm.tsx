@@ -56,13 +56,13 @@ export default function ContactForm() {
         <div className="max-w-2xl mx-auto text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-gray-800">Get in Touch</h2>
           <p className="text-lg text-gray-600">
-            Have questions or ready to start your journey? I'm here to help.
+            {"Have questions or ready to start your journey? I'm here to help."}
           </p>
         </div>
         <form onSubmit={handleSubmit} className="max-w-xl mx-auto bg-white rounded-2xl p-8 shadow-lg">
           {status === 'success' && (
             <div className="mb-6 p-4 bg-green-50 border border-green-200 text-green-700 rounded-xl">
-              Thank you for your message! I'll get back to you within 24 hours.
+              {"Thank you for your message! I'll get back to you within 24 hours."}
             </div>
           )}
           {status === 'error' && (
