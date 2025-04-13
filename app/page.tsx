@@ -17,6 +17,7 @@ export default function Home() {
       <MeaningSection />
       <WavyLine />
       <AboutTherapy />
+      <WavyLine />
       <ContactForm />
       <IntroCall />
       <FAQSection />

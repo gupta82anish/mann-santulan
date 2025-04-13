@@ -2,11 +2,11 @@ import Link from "next/link"
 
 export default function IntroCall() {
   return (
-    <section id="intro-call" className="py-16 bg-white">
+    <section id="intro-call" className="py-16 bg-[#F8FBF8]">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="md:w-2/3">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl md:text-4xl font-light text-gray-800 mb-4">
               Ready to Begin Your Healing Journey?
             </h2>
             <p className="text-gray-600 text-lg">

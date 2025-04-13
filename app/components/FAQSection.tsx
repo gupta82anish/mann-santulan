@@ -31,7 +31,7 @@ export default function FAQSection() {
   }, [])
 
   return (
-    <section id="faq" className="py-24 bg-gradient-to-b from-white to-gray-50">
+    <section id="faq" className="py-24 bg-[#F8FBF8]">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           {/* Header */}
