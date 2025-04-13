@@ -61,7 +61,7 @@ export default function ContactForm() {
             </h2>
             <div className="w-24 h-1 bg-muted-green mx-auto mb-6"></div>
             <p className="text-xl text-gray-600">
-              Have questions or ready to start your journey? I'm here to help.
+              Have questions or ready to start your journey? I&apos;m here to help.
             </p>
           </div>
 
@@ -70,7 +70,7 @@ export default function ContactForm() {
             <form onSubmit={handleSubmit} className="space-y-8">
               {status === 'success' && (
                 <div className="p-4 bg-green-50 border border-green-200 text-green-700 rounded-xl">
-                  Thank you for your message! I'll get back to you within 24 hours.
+                  Thank you for your message! I&apos;ll get back to you within 24 hours.
                 </div>
               )}
 

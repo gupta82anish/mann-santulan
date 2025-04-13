@@ -20,15 +20,15 @@ export default function AboutTherapy() {
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Therapy is a space just for you—a space where you can talk freely about what's on your mind, without the fear of being judged or misunderstood. It's where you can explore your thoughts, feelings, and experiences with someone who's trained to listen, understand, and support you.
+                Therapy is a space just for you—a space where you can talk freely about what&apos;s on your mind, without the fear of being judged or misunderstood. It&apos;s where you can explore your thoughts, feelings, and experiences with someone who&apos;s trained to listen, understand, and support you.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                It's not only for when things feel overwhelming. Sometimes, it's about getting to know yourself better, building confidence, improving relationships, or just having someone to talk to when life feels confusing or heavy. You don't need to have a "big reason" to start therapy—wanting to feel better, lighter, or more in control is enough.
+                It&apos;s not only for when things feel overwhelming. Sometimes, it&apos;s about getting to know yourself better, building confidence, improving relationships, or just having someone to talk to when life feels confusing or heavy. You don&apos;t need to have a &quot;big reason&quot; to start therapy—wanting to feel better, lighter, or more in control is enough.
               </p>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Therapy is a journey we take together, at your pace. It's about helping you find clarity, build emotional strength, and feel more connected—with yourself and the world around you.
+                Therapy is a journey we take together, at your pace. It&apos;s about helping you find clarity, build emotional strength, and feel more connected—with yourself and the world around you.
               </p>
             </div>
 

@@ -34,7 +34,7 @@ export default function Hero() {
               Your Path to Mental Wellness
             </p>
             <p className="text-base md:text-lg text-gray-600 max-w-lg">
-              Professional therapy to help you overcome life's challenges
+              Professional therapy to help you overcome life&apos;s challenges
             </p>
             <Link
               href="#intro-call"

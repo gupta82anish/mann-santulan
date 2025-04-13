@@ -76,10 +76,10 @@ export default function MeaningSection() {
               >
                 <h3 className="text-2xl font-light text-gray-800 mb-6">The Practice</h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  As a therapist, my aim is to create a warm, non-judgmental space where you can safely explore your inner world. I believe that each person's journey is unique, and healing looks different for everyone.
+                  As a therapist, my aim is to create a warm, non-judgmental space where you can safely explore your inner world. I believe that each person&apos;s journey is unique, and healing looks different for everyone.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Through our work together, my hope is to help you move toward a sense of balance that feels true and supportive for you—because therapy isn't about changing who you are, but about reconnecting with your most authentic self.
+                  Through our work together, my hope is to help you move toward a sense of balance that feels true and supportive for you—because therapy isn&apos;t about changing who you are, but about reconnecting with your most authentic self.
                 </p>
               </div>
 
@@ -92,7 +92,7 @@ export default function MeaningSection() {
               >
                 <h3 className="text-2xl font-light text-gray-800 mb-6">The Importance</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  In the context of mental health, maintaining "Mann Santulan" is essential for overall well-being, as it helps individuals navigate life's challenges with resilience and clarity.
+                  In the context of mental health, maintaining &quot;Mann Santulan&quot; is essential for overall well-being, as it helps individuals navigate life&apos;s challenges with resilience and clarity.
                 </p>
               </div>
             </div>

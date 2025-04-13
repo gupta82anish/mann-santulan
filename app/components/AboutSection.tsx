@@ -23,11 +23,11 @@ export default function AboutSection() {
             <div className="space-y-8">
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-700 leading-relaxed">
-                  I'm a counselling psychologist who truly believes that each person is unique—shaped by their own experiences, emotions, and the journey they've walked so far. I'm also on my own path of self-growth, learning to understand myself better and practicing self-compassion along the way.
+                  I&apos;m a counselling psychologist who truly believes that each person is unique—shaped by their own experiences, emotions, and the journey they&apos;ve walked so far. I&apos;m also on my own path of self-growth, learning to understand myself better and practicing self-compassion along the way.
                 </p>
 
                 <p className="text-gray-700 leading-relaxed">
-                  I hold a Master's degree in Clinical Psychology and have undergone additional training to continue developing and refining my counseling skills. I offer a safe and inclusive space for healing and growth. My approach is primarily client-centered, and I draw from various therapeutic modalities to tailor each session to the unique needs of the individual.
+                  I hold a Master&apos;s degree in Clinical Psychology and have undergone additional training to continue developing and refining my counseling skills. I offer a safe and inclusive space for healing and growth. My approach is primarily client-centered, and I draw from various therapeutic modalities to tailor each session to the unique needs of the individual.
                 </p>
               </div>
 
@@ -35,7 +35,7 @@ export default function AboutSection() {
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                   <h3 className="text-lg font-medium text-gray-800 mb-3">Education</h3>
-                  <p className="text-gray-600">Master's in Clinical Psychology</p>
+                  <p className="text-gray-600">Master&apos;s in Clinical Psychology</p>
                 </div>
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                   <h3 className="text-lg font-medium text-gray-800 mb-3">Experience</h3>
@@ -45,11 +45,11 @@ export default function AboutSection() {
 
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-700 leading-relaxed">
-                  I aim to create a safe, non-judgmental environment where clients can reflect on their paths, make sense of their experiences, and feel seen, heard, and validated as they move through life's complexities.
+                  I aim to create a safe, non-judgmental environment where clients can reflect on their paths, make sense of their experiences, and feel seen, heard, and validated as they move through life&apos;s complexities.
                 </p>
 
                 <p className="text-gray-700 leading-relaxed">
-                  I'm here to offer thoughtful, compassionate support as you work toward a life that feels more balanced, meaningful, and true to you. I believe in your capacity to grow—and I'm honored to walk alongside you on that journey.
+                  I&apos;m here to offer thoughtful, compassionate support as you work toward a life that feels more balanced, meaningful, and true to you. I believe in your capacity to grow—and I&apos;m honored to walk alongside you on that journey.
                 </p>
               </div>
             </div>
