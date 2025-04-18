@@ -17,7 +17,8 @@ export default function IntroCall() {
           </div>
           <div className="md:w-1/3 flex justify-end">
             <Link
-              href="#appointment"
+              href="https://cal.com/ridhima-gupta/15min"
+              target="_blank"
               className="bg-muted-green hover:bg-muted-green/80 text-white font-bold py-3 px-8 rounded-full transition duration-300 whitespace-nowrap"
             >
               Schedule Introductory Call

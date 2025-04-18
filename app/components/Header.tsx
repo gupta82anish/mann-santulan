@@ -20,7 +20,7 @@ const NAV_LINKS = [
   { name: 'About', href: '/about-me', scrollTo: null },
   { name: 'Services', href: '#services', scrollTo: 'services' },
   { name: 'FAQ', href: '#faq', scrollTo: 'faq' },
-  { name: 'Contact', href: '#contact', scrollTo: 'contact' }
+  { name: 'Contact', href: '/contact', scrollTo: null }
 ]
 
 export default function Header() {
@@ -75,7 +75,7 @@ export default function Header() {
           </div>
           <div className="space-x-4">
             {NAV_LINKS.map((link) => (
-              <a 
+              <Link 
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavigation(e, link.scrollTo)}
@@ -84,7 +84,7 @@ export default function Header() {
                 }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
