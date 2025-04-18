@@ -19,7 +19,7 @@ export default function MeaningSection() {
           {/* Header with Devanagari Text */}
           <div className="text-center mb-16">
             <h2 className={`${devanagari.className} text-5xl md:text-6xl text-gray-800 mb-4`}>
-              मन संतुलन
+              Mann संतुलन
             </h2>
             <div className="w-32 h-1 bg-muted-green mx-auto mb-6"></div>
             <p className="text-xl text-gray-600">

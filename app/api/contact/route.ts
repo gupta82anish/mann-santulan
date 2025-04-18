@@ -4,7 +4,7 @@ import { EmailTemplate } from '@/app/components/EmailTemplate';
 
 // Don't use NEXT_PUBLIC_ prefix for server-side environment variables
 const resend = new Resend(process.env.RESEND_API_KEY);
-const EMAIL_ADDRESS = 'gupta.anish82@yahoo.com'
+const EMAIL_ADDRESS = 'contact.ridhimagupta@gmail.com'
 
 export async function POST(request: Request) {
   try {

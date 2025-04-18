@@ -109,7 +109,7 @@ export default function FAQSection() {
               Have more questions? Feel free to reach out.
             </p>
             <a 
-              href="#contact"
+              href="/contact"
               className="inline-block bg-muted-green text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-muted-green/90 transition-colors duration-300"
             >
               Contact Me
