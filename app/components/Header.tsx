@@ -49,7 +49,7 @@ export default function Header() {
     setIsLightPage(LIGHT_PAGES.includes(pathname))
   }, [pathname])
 
-  const handleNavigation = async (e: React.MouseEvent, scrollTo: string | null, href: string) => {
+  const handleNavigation = async (e: React.MouseEvent, scrollTo: string | null) => {
     if (!scrollTo) return
 
     e.preventDefault()
@@ -104,7 +104,7 @@ export default function Header() {
               <Link 
                 key={link.name}
                 href={link.href}
-                onClick={(e) => handleNavigation(e, link.scrollTo, link.href)}
+                onClick={(e) => handleNavigation(e, link.scrollTo)}
                 className={`relative ${
                   isScrolled || isLightPage ? 'text-gray-600 hover:text-gray-800' : 'text-white/80 hover:text-white'
                 } ${
