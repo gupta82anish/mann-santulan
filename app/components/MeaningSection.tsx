@@ -18,11 +18,11 @@ export default function MeaningSection() {
         <div className="max-w-4xl mx-auto">
           {/* Header with Devanagari Text */}
           <div className="text-center mb-16">
-            <h2 className={`${devanagari.className} text-5xl md:text-6xl text-gray-800 mb-4`}>
+            <h2 className={`${devanagari.className} text-4xl sm:text-5xl md:text-6xl text-gray-800 mb-4`}>
               Mann संतुलन
             </h2>
             <div className="w-32 h-1 bg-muted-green mx-auto mb-6"></div>
-            <p className="text-xl text-gray-600">
+            <p className="text-lg md:text-xl text-gray-600">
               Finding balance within the mind
             </p>
           </div>
@@ -32,34 +32,34 @@ export default function MeaningSection() {
             {/* Left Column - Meaning Breakdown */}
             <div className="space-y-8">
               <div 
-                className={`bg-white p-8 rounded-xl shadow-sm border border-gray-100 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-md ${
+                className={`bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-md ${
                   hoveredIndex === 0 ? 'border-muted-green/30' : ''
                 }`}
                 onMouseEnter={() => setHoveredIndex(0)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <h3 className="text-2xl font-light text-gray-800 mb-6">The Meaning</h3>
+                <h3 className="text-xl md:text-2xl font-light text-gray-800 mb-6">The Meaning</h3>
                 <div className="space-y-6">
                   <div className="transform transition-transform duration-300 hover:translate-x-2">
-                    <p className={`${devanagari.className} text-3xl text-muted-green mb-2`}>मन</p>
-                    <p className="text-gray-700">Mind, heart, and inner self</p>
+                    <p className={`${devanagari.className} text-2xl md:text-3xl text-muted-green mb-2`}>मन</p>
+                    <p className="text-sm md:text-base text-gray-700">Mind, heart, and inner self</p>
                   </div>
                   <div className="transform transition-transform duration-300 hover:translate-x-2">
-                    <p className={`${devanagari.className} text-3xl text-muted-green mb-2`}>संतुलन</p>
-                    <p className="text-gray-700">Balance, equilibrium, and harmony</p>
+                    <p className={`${devanagari.className} text-2xl md:text-3xl text-muted-green mb-2`}>संतुलन</p>
+                    <p className="text-sm md:text-base text-gray-700">Balance, equilibrium, and harmony</p>
                   </div>
                 </div>
               </div>
 
               <div 
-                className={`bg-white p-8 rounded-xl shadow-sm border border-gray-100 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-md ${
+                className={`bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-md ${
                   hoveredIndex === 1 ? 'border-muted-green/30' : ''
                 }`}
                 onMouseEnter={() => setHoveredIndex(1)}
                 onMouseLeave={() => setHoveredIndex(null)}
               >
-                <h3 className="text-2xl font-light text-gray-800 mb-6">The Philosophy</h3>
-                <p className="text-gray-700 leading-relaxed">
+                <h3 className="text-xl md:text-2xl font-light text-gray-800 mb-6">The Philosophy</h3>
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                   Together, they reflect the idea of finding a gentle equilibrium within ourselves—a space where our thoughts, emotions, and lived experiences can feel understood, validated, and at peace.
                 </p>
               </div>
@@ -100,8 +100,8 @@ export default function MeaningSection() {
 
           {/* Decorative Elements */}
           <div className="mt-16 text-center">
-            <div className="inline-block p-4 rounded-full bg-muted-green/10">
-              <span className="text-4xl">✦</span>
+            <div className="inline-block p-3 md:p-4 rounded-full bg-muted-green/10">
+              <span className="text-3xl md:text-4xl">✦</span>
             </div>
           </div>
         </div>

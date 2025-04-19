@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { useState, useEffect } from "react"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { Tiro_Devanagari_Hindi } from "next/font/google"
 // Scroll threshold in pixels - can be adjusted as needed
 const SCROLL_THRESHOLD = 100
@@ -11,8 +11,8 @@ const SCROLL_THRESHOLD = 100
 const LIGHT_PAGES = [
   '/',
   '/profile',
-  '/contact',  // For future light pages
-  '/about'     // For future light pages
+  '/contact',
+  '/about-me',
 ]
 
 const NAV_LINKS = [
@@ -34,6 +34,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isLightPage, setIsLightPage] = useState(false)
   const pathname = usePathname()
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,14 +49,32 @@ export default function Header() {
     setIsLightPage(LIGHT_PAGES.includes(pathname))
   }, [pathname])
 
-  const handleNavigation = (e: React.MouseEvent, scrollTo: string | null) => {
-    if (scrollTo) {
-      e.preventDefault()
+  const handleNavigation = async (e: React.MouseEvent, scrollTo: string | null, href: string) => {
+    if (!scrollTo) return
+
+    e.preventDefault()
+    
+    if (pathname === '/') {
       const section = document.getElementById(scrollTo)
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' })
       }
+    } else {
+      await router.push('/')
+      setTimeout(() => {
+        const section = document.getElementById(scrollTo)
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 100)
     }
+  }
+
+  const isActive = (href: string) => {
+    if (href === '/') {
+      return pathname === '/'
+    }
+    return pathname.startsWith(href)
   }
 
   return (
@@ -67,8 +86,8 @@ export default function Header() {
       }`}
     >
       <nav className="container mx-auto px-6 py-3">
-        <div className="flex justify-between items-end">
-          <div className="flex flex-col">
+        <div className="flex flex-col items-center md:flex-row md:justify-between md:items-end space-y-4 md:space-y-0">
+          <div className="flex flex-col items-center md:items-start">
             <Link href="/" className={`text-2xl font-bold ${devanagari.className} ${
               isScrolled || isLightPage ? 'text-gray-800' : 'text-white'
             }`}>
@@ -80,14 +99,16 @@ export default function Header() {
               by Ridhima Gupta
             </span>
           </div>
-          <div className="space-x-4">
+          <div className="flex flex-wrap justify-center space-x-4">
             {NAV_LINKS.map((link) => (
               <Link 
                 key={link.name}
                 href={link.href}
-                onClick={(e) => handleNavigation(e, link.scrollTo)}
-                className={`${
+                onClick={(e) => handleNavigation(e, link.scrollTo, link.href)}
+                className={`relative ${
                   isScrolled || isLightPage ? 'text-gray-600 hover:text-gray-800' : 'text-white/80 hover:text-white'
+                } ${
+                  isActive(link.href) ? 'after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-current after:opacity-50' : ''
                 }`}
               >
                 {link.name}

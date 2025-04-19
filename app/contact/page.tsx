@@ -3,7 +3,7 @@ import { WavyLine } from "../components/Items"
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-[#F8FBF8]">
+    <div className="min-h-screen pt-20 md:pt-10 bg-[#F8FBF8]">
       <div className="container mx-auto px-4 py-24">
         <div className="max-w-[100rem]">
           {/* Header */}

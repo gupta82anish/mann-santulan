@@ -4,8 +4,8 @@ import Image from "next/image"
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-6">
+    <section id="about" className="min-h-screen pt-20 md:pt-10 bg-[#F8FBF8]">
+      <div className="container mx-auto px-6 py-24">
         <div className="max-w-5xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-20">
