@@ -3,22 +3,12 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import Header from "@/app/components/Header" 
 import Footer from "@/app/components/Footer"
-import { ResolvingMetadata } from "next/dist/lib/metadata/types/metadata-interface"
 import { Metadata } from "next"
 import { getSettings } from "./utils/settings"
 
 const inter = Inter({ subsets: ["latin"] })
 
-
-type Props = {
-  params: { id: string }
-  searchParams: { [key: string]: string | string[] | undefined }
-}
-
-export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSettings()
 
   return {
