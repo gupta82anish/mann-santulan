@@ -11,7 +11,7 @@ export default function AboutMe() {
             <div className="relative aspect-square rounded-lg overflow-hidden shadow-lg">
               <div className="w-full h-full">
                 <Image
-                  src="/assets/images/IMG_2583.jpeg"
+                  src="/assets/images/IMG_2392.jpeg"
                   alt="Portrait of the therapist"
                   fill
                   className="object-cover"
@@ -32,7 +32,7 @@ export default function AboutMe() {
               <li>Fluent in English and Spanish</li>
             </ul>
             <Link
-              href="/profile"
+              href="/about-me"
               className="inline-block mt-4 text-muted-green hover:text-muted-green/80 font-semibold transition-colors"
             >
               View full credentials →

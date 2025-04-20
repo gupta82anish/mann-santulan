@@ -58,7 +58,7 @@ export default function AboutSection() {
             <div className="space-y-8">
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/assets/images/IMG_2583.jpeg"
+                  src="/assets/images/IMG_2392.jpg"
                   alt="Ridhima Gupta - Counselling Psychologist"
                   fill
                   className="object-cover"
