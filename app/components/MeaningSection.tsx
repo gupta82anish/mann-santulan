@@ -41,11 +41,17 @@ export default function MeaningSection() {
                 <h3 className="text-xl md:text-2xl font-light text-gray-800 mb-6">The Meaning</h3>
                 <div className="space-y-6">
                   <div className="transform transition-transform duration-300 hover:translate-x-2">
-                    <p className={`${devanagari.className} text-2xl md:text-3xl text-muted-green mb-2`}>मन</p>
+                    <div className="flex flex-row items-center gap-4">
+                      <p className={`${devanagari.className} text-2xl md:text-3xl text-muted-green mb-2`}>मन</p>
+                      <p className="text-sm md:text-base text-gray-700">(Mann)</p>
+                    </div>
                     <p className="text-sm md:text-base text-gray-700">Mind, heart, and inner self</p>
                   </div>
                   <div className="transform transition-transform duration-300 hover:translate-x-2">
-                    <p className={`${devanagari.className} text-2xl md:text-3xl text-muted-green mb-2`}>संतुलन</p>
+                    <div className="flex flex-row items-center gap-4">
+                      <p className={`${devanagari.className} text-2xl md:text-3xl text-muted-green mb-2`}>संतुलन</p>
+                      <p className="text-sm md:text-base text-gray-700">(Santulan)</p>
+                    </div>
                     <p className="text-sm md:text-base text-gray-700">Balance, equilibrium, and harmony</p>
                   </div>
                 </div>

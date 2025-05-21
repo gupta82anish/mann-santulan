@@ -20,7 +20,7 @@ export default function AboutSection() {
           {/* Main Content */}
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             {/* Left Column - Text Content */}
-            <div className="space-y-8">
+            <div className="space-y-8 order-2 lg:order-1">
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-700 leading-relaxed">
                   I&apos;m a counselling psychologist who truly believes that each person is unique—shaped by their own experiences, emotions, and the journey they&apos;ve walked so far. I&apos;m also on my own path of self-growth, learning to understand myself better and practicing self-compassion along the way.
@@ -55,7 +55,7 @@ export default function AboutSection() {
             </div>
 
             {/* Right Column - Image and Highlights */}
-            <div className="space-y-8">
+            <div className="space-y-8 order-1 lg:order-2">
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src="/assets/images/IMG_2392.jpg"
